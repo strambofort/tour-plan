@@ -20,23 +20,25 @@
     display: flex
     align-items: center
     justify-content: space-between
-    color: $light
+    // color: $light
     &__link
-      color: inherit
+      color: $light
       text-decoration: none
       text-transform: uppercase
-      width: 84px
-      height: 18px
+      // width: 84px
+      // height: 18px
       font-size: 14px
       line-height: 18px
 .logo
   width: 177px
 .search
   display: flex
+  height: 40px
   position: relative
   overflow: hidden
   border-radius: 6px
-  height: 40px
+  margin-right: auto
+  margin-left: 108px  
   &__input
     width: 350px
     height: 100%
@@ -48,7 +50,7 @@
     line-height: 15px
     color: $text-color
     &::placeholder
-      color: #ffd595
+      color: $text-color
   &__button
     position: absolute
     top: 0
@@ -66,8 +68,8 @@
     height: 40px
     border-radius: 50%
     object-fit: cover
-  &__name
-    margin-left: 18px
+    margin-right: 18px
+  &__name    
     font-size: 14px
     line-height: 18px
     color: $text-color
