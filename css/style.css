@@ -413,6 +413,8 @@ template {
   text-transform: uppercase;
   width: 84px;
   height: 18px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .logo {
@@ -439,6 +441,22 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #333333;
+}
+
+.search__input::-webkit-input-placeholder {
+  color: #ffd595;
+}
+
+.search__input:-ms-input-placeholder {
+  color: #ffd595;
+}
+
+.search__input::-ms-input-placeholder {
+  color: #ffd595;
+}
+
+.search__input::placeholder {
+  color: #ffd595;
 }
 
 .search__button {
@@ -489,6 +507,9 @@ template {
   .logo {
     max-width: 132px;
   }
+  .navbar-botton {
+    height: 60px;
+  }
   .navbar-top {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -508,7 +529,7 @@ template {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     max-width: 576px;
     width: 92%;
