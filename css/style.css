@@ -366,12 +366,15 @@ template {
 
 .navbar-top {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 40px;
@@ -380,6 +383,7 @@ template {
 
 .navbar-top__menu-button {
   display: none;
+  cursor: pointer;
 }
 
 .navbar__search {
@@ -396,12 +400,15 @@ template {
   margin: 0;
   padding: 31px 0;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
@@ -420,12 +427,14 @@ template {
 
 .search {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   height: 40px;
   position: relative;
   overflow: hidden;
-  border-radius: 6px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
   margin-right: auto;
   margin-left: 108px;
 }
@@ -443,6 +452,10 @@ template {
 }
 
 .search__input::-webkit-input-placeholder {
+  color: #333333;
+}
+
+.search__input::-moz-placeholder {
   color: #333333;
 }
 
@@ -470,9 +483,11 @@ template {
 
 .user {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
@@ -481,7 +496,8 @@ template {
 .user__avatar {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
   margin-right: 18px;
@@ -540,19 +556,23 @@ template {
   }
   .menu-button {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     width: 16px;
     height: 11px;
     padding: 0;
     -webkit-box-align: center;
+    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     border: none;
