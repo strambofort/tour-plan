@@ -540,7 +540,7 @@ template {
 }
 
 .hotel {
-  padding-top: 23px;
+  padding-top: 13px;
   padding-bottom: 70px;
 }
 
@@ -637,6 +637,10 @@ template {
 .rating__counter {
   font-size: 14px;
   line-height: 18px;
+}
+
+.rating__small {
+  font-size: 10px;
 }
 
 @media (max-width: 1200px) {
