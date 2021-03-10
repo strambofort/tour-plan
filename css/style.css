@@ -743,7 +743,7 @@ template {
           border-radius: 8px;
   width: 350px;
   min-height: 210px;
-  padding: 28px;
+  padding: 28px 29px 23px 26px;
 }
 
 .booking__info {
@@ -755,7 +755,7 @@ template {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 
 .booking__price {
@@ -952,6 +952,8 @@ template {
   }
   .booking {
     width: 340px;
+    padding-right: 22px;
+    padding-left: 23px;
   }
   .slider {
     width: 100%;
@@ -1059,7 +1061,10 @@ template {
     width: 99px;
   }
   .slider {
-    height: 180px;
+    height: 250px;
+  }
+  .swiper-slide {
+    width: 100%;
   }
   .hotel__slider {
     margin-bottom: 20px;
@@ -1086,13 +1091,16 @@ template {
   }
   .booking {
     padding-left: 23px;
-    padding-right: 22px;
+    padding-right: 25px;
   }
   .booking-list {
     padding-top: 23px;
   }
   .breadcrumb-list {
     padding-top: 21px;
+  }
+  .map {
+    height: 172px;
   }
 }
 /*# sourceMappingURL=style.css.map */
