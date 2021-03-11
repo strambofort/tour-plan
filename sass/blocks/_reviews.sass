@@ -1,6 +1,7 @@
 .reviews
     padding: 40px 0 70px 0
     &__title
+        margin-top: 0
         font-style: normal
         font-weight: bold
         font-size: 36px
@@ -15,6 +16,7 @@
             flex-direction: column
             align-items: center
             max-width: 731px
+            max-height: 280px
             margin: 45px auto 0
             background-color: #FFFFFF
             border-radius: 8px
@@ -25,7 +27,7 @@
                 left: 62px
                 top: 13px
                 width: 70px
-                height: 47px
+                height: 48px
                 background-image: url(../img/quote-left.svg)
                 background-repeat: no-repeat
             &:after
@@ -34,7 +36,7 @@
                 right: 62px
                 top: 118px
                 width: 70px
-                height: 47px
+                height: 48px
                 background-image: url(../img/quote-right.svg)
                 background-repeat: no-repeat
         &__button
@@ -56,7 +58,6 @@
             &--next
                 background-image: url(../img/arrow-next-secondary.svg)
                 right: 0
-
         &__profile
             display: flex
             flex-direction: column
@@ -70,6 +71,7 @@
             object-fit: cover
             margin-bottom: 9px
         &__username
+            margin: 0
             font-style: normal
             font-weight: bold
             font-size: 12px
@@ -85,7 +87,11 @@
         &__rating
             display: flex
             align-items: center
+            font-weight: normal
+            font-size: 10px
+            line-height: 13px
         &__text
+            overflow-y: auto
             max-width: 537px
             font-style: normal
             font-weight: normal
