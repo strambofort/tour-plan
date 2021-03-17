@@ -25,7 +25,7 @@
             margin-right: auto
             margin-left: 47px
         &-menu
-            width: 673px
+            // width: 673px
             margin: auto
             padding-top: 20px
             padding-bottom: 23px
@@ -86,12 +86,51 @@
         &__title
             margin-bottom: 20px
 @media (max-width: 767px)
+    body
+        padding-top: 78px
     .container
         max-width: 576px
-        width: 92%
+        // width: 92%
     .navbar
-        &__search, &-menu, &__user
+        // &__search, &__user
+        //     display: none
+        &--mobile
+            &--fixed
+                position: fixed
+                top: 0
+                right: 0
+                left: 0
+                z-index: 99
+        &__user, &__search
+            &--mobile
+                &--hidden
+                    display: none
+                &--visible
+                    display: flex
+        &__user
+            flex-direction: column
+            justify-content: center
+        &-botton
             display: none
+            position: fixed
+            top: 78px
+            left: 0
+            right: 0
+            bottom: 0
+            overflow-y: auto
+            &--visible
+                display: block
+        &-menu
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            &__item
+                margin-bottom: 20px
+                &--mobile
+                    &--visible
+                        display: block
+
     .menu
         &-button
             display: flex
