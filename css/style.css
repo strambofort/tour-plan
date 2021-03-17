@@ -509,13 +509,13 @@ template {
           border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-right: 18px;
 }
 
 .user__name {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+  margin-left: 18px;
 }
 
 .breadcrumb-list {
@@ -1733,7 +1733,7 @@ template {
     padding-top: 78px;
   }
   .container {
-    max-width: 576px;
+    max-width: 560px;
   }
   .navbar--mobile--fixed {
     position: fixed;
@@ -1766,13 +1766,14 @@ template {
     display: none;
     position: fixed;
     top: 78px;
+    padding-top: 30px;
     left: 0;
     right: 0;
     bottom: 0;
-    overflow-y: auto;
   }
   .navbar-botton--visible {
     display: block;
+    overflow-y: auto;
   }
   .navbar-menu {
     display: -webkit-box;
@@ -1828,6 +1829,12 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .user__name--light {
+    color: #fff;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-left: 0;
   }
   .stars {
     -webkit-flex-basis: auto;

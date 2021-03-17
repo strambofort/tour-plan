@@ -89,7 +89,7 @@
     body
         padding-top: 78px
     .container
-        max-width: 576px
+        max-width: 560px
         // width: 92%
     .navbar
         // &__search, &__user
@@ -110,16 +110,18 @@
         &__user
             flex-direction: column
             justify-content: center
+
         &-botton
             display: none
             position: fixed
             top: 78px
+            padding-top: 30px
             left: 0
             right: 0
             bottom: 0
-            overflow-y: auto
             &--visible
                 display: block
+                overflow-y: auto
         &-menu
             display: flex
             flex-direction: column
@@ -147,6 +149,14 @@
                 width: 16px
                 height: 1px
                 background-color: $text-color
+    .user
+        &__name
+            &--light
+                color: $light
+                margin-right: 0
+                margin-top: 10px
+                margin-left: 0
+
     .stars
         flex-basis: auto
     .hotel
@@ -277,17 +287,7 @@
                     right: 50%
                     transform: translate(50%, 0)
                     margin-right: -90px
-        // &__item
-        //     &__button
-        //         top: 30px
-        //         &--next
-        //             right: 42%
-        //         &--prev
-        //             left: 40%
-        //     &__text
-        //         text-align: left
-        //         height: 270px
-        //         overflow-y: auto
+
     .activities
         padding-top: 6px
         &__title
