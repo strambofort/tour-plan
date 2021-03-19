@@ -25,6 +25,18 @@ img {
   cursor: pointer;
 }
 
+.button-back {
+  background: #ec1f46;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  min-width: 140px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -631,6 +643,10 @@ template {
   margin: 4px 0 0;
   font-size: 24px;
   line-height: 30px;
+}
+
+.hotel-name--back {
+  margin-top: 30px;
 }
 
 .hotel-description {
@@ -1475,6 +1491,7 @@ iframe {
   height: 123px;
   margin-bottom: 23px;
   resize: none;
+  padding: 18px 0 10px 23px;
 }
 
 .footer__message::-webkit-input-placeholder {
@@ -1530,10 +1547,6 @@ iframe {
   border: none;
 }
 
-.footer__button--back {
-  margin-top: 20px;
-}
-
 .footer__info {
   font-style: normal;
   font-weight: bold;
@@ -1573,35 +1586,35 @@ iframe {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: footer-color;
 }
 
 .input::-moz-placeholder {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: footer-color;
 }
 
 .input:-ms-input-placeholder {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: footer-color;
 }
 
 .input::-ms-input-placeholder {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: footer-color;
 }
 
 .input::placeholder {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: footer-color;
 }
 
 .disclaimer {
