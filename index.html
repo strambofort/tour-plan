@@ -229,7 +229,9 @@
                   /><span class="booking__num">12100</span>
                 </a>
               </div>
-              <button class="button booking__button">View Other Options</button>
+              <button data-toggle="modal" class="button booking__button">
+                View Other Options
+              </button>
             </div>
             <div class="map">
               <iframe
@@ -347,7 +349,7 @@
               class="card__image"
             />
             <div class="card__title">The curious corner <br />of chamarel</div>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <div class="card activities__card">
             <img
@@ -357,7 +359,7 @@
               class="card__image"
             />
             <div class="card__title">Gymkhana club golf course</div>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <div class="card activities__card">
             <img
@@ -371,7 +373,7 @@
             <div class="card__title">
               Tamarind falls hiking <br />trip - full day
             </div>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <div class="card activities__card">
             <img
@@ -381,7 +383,7 @@
               class="card__image"
             />
             <div class="card__title">The blue marine discovery quest</div>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
         </div>
       </div>
@@ -553,11 +555,11 @@
                 name="phone"
               />
               <textarea
-                class="footer__message"
+                class="message footer__message"
                 placeholder="Message"
                 name="message"
               ></textarea>
-              <button class="button footer__button" type="submit">Send</button>
+              <button class="footer__button" type="submit">Send</button>
               <span class="footer__info">* Required Fields</span>
             </form>
           </div>
@@ -576,6 +578,38 @@
       </div>
       <!-- /.container -->
     </footer>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="icon: close" class="modal__close-img" />
+        </a>
+        <h3 class="modal__title">Booking</h3>
+        <form action="send.php" method="POST" class="form modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+          />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Phone Number*"
+          />
+          <input type="text" class="input modal__input" placeholder="Email*" />
+          <textarea
+            class="message modal__message"
+            placeholder="Message"
+          ></textarea>
+          <button class="modal__button" type="submit">Send</button>
+          <span class="info modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>

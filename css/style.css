@@ -1499,7 +1499,6 @@ iframe {
   font-size: 12px;
   line-height: 15px;
   color: footer-color;
-  padding: 18px 10px 0 23px;
 }
 
 .footer__message::-moz-placeholder {
@@ -1507,7 +1506,6 @@ iframe {
   font-size: 12px;
   line-height: 15px;
   color: footer-color;
-  padding: 18px 10px 0 23px;
 }
 
 .footer__message:-ms-input-placeholder {
@@ -1515,7 +1513,6 @@ iframe {
   font-size: 12px;
   line-height: 15px;
   color: footer-color;
-  padding: 18px 10px 0 23px;
 }
 
 .footer__message::-ms-input-placeholder {
@@ -1523,7 +1520,6 @@ iframe {
   font-size: 12px;
   line-height: 15px;
   color: footer-color;
-  padding: 18px 10px 0 23px;
 }
 
 .footer__message::placeholder {
@@ -1531,7 +1527,6 @@ iframe {
   font-size: 12px;
   line-height: 15px;
   color: footer-color;
-  padding: 18px 10px 0 23px;
 }
 
 .footer__button {
@@ -1876,7 +1871,7 @@ iframe {
 }
 
 @media (max-width: 767px) {
-  .body {
+  body {
     padding-top: 78px;
   }
   .container, .newslatter-wrapper {
@@ -2192,6 +2187,28 @@ iframe {
 }
 
 @media (max-width: 576px) {
+  .logo {
+    width: 99px;
+  }
+  .hotel-slider {
+    height: 250px;
+  }
+  .hotel-slider__button {
+    width: 12px;
+    height: 12px;
+    -webkit-background-size: 4px 7px;
+            background-size: 4px 7px;
+    margin-top: -6px;
+  }
+  .hotel-slider__button--prev {
+    margin-left: 9px;
+  }
+  .hotel-slider__button--next {
+    margin-right: 9px;
+  }
+  .hotel__slider {
+    margin-bottom: 20px;
+  }
   .reviews-slider__text {
     max-width: 380px;
   }
@@ -2256,6 +2273,31 @@ iframe {
   }
   .disclaimer__link:last-child {
     margin-right: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    padding-top: 67px;
+  }
+  .container, .newslatter-wrapper {
+    max-width: 310px;
+  }
+  .user__name {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: none;
+    margin-bottom: -9px;
+  }
+  .navbar__search-form {
+    margin: auto;
+    width: 245px;
+    margin-top: 15px;
+    margin-bottom: 13.5px;
+  }
+  .navbar-menu__item {
+    margin: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
