@@ -267,7 +267,15 @@
     &__disclaimer
       display: flex
       justify-content: space-between
-
+  .modal
+    &__dialog
+      padding: 33px 30px 33px 30px
+    &__button
+      order: 0
+    &__info
+      margin-bottom: 10px
+    &__message
+      min-height: 100px
   @media ( max-width: 660px )
     .footer
       &-wrapper
@@ -337,6 +345,10 @@
         margin-right: 9px
         &:last-child
           margin-right: 0
+  .modal
+    &__dialog
+      margin: auto
+      width: 70%
 
 @media ( max-width: 576px )
   .logo
@@ -378,7 +390,19 @@
   .search
     width: 230px
 
-@media ( max-width: 440px )
+@media ( max-width: 500px )
+  .modal
+    &__dialog
+      overflow-y: auto
+      max-height: 90%
+      width: 80%
+    &__input
+      margin-bottom: 10px
+      order: 1
+    // &__button
+    //   order: 2
+
+  @media ( max-width: 440px )
   .reviews
     &-slider
       &__text
