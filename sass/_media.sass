@@ -91,7 +91,7 @@
       margin-bottom: 20px
   .card
     width: 339px
-    height: 225pх
+    height: 225px
   .footer
     padding-top: 67px
     &-wrapper
@@ -131,6 +131,9 @@
         min-width: 45px
   .disclaimer
     padding-top: 56px
+  .modal
+    &__dialog
+      padding: 30px 50px 30px 50px
 
 @media ( max-width: 768px )
   .container, .newslatter-wrapper
@@ -172,6 +175,8 @@
         color: $light
         text-transform: none
   .navbar
+    &__search-form
+      margin-left: 0
     &-menu
       display: flex
       flex-direction: column
@@ -180,7 +185,7 @@
       &__item
         margin-bottom: 20px
         &--visible
-          display: block
+          display: flex
     &--mobile
       &--fixed
         position: fixed
@@ -201,9 +206,9 @@
     &__user, &__search-form
       &--hidden
         display: none
-    .user
-      &--hidden
-        display: none
+  .user
+    &--hidden
+      display: none
   .navbar-top
     &__menu-button
       display: flex
@@ -270,8 +275,8 @@
   .modal
     &__dialog
       padding: 33px 30px 33px 30px
-    &__button
-      order: 0
+    // &__button
+    //   order: 0
     &__info
       margin-bottom: 10px
     &__message
@@ -390,7 +395,7 @@
   .search
     width: 230px
 
-@media ( max-width: 500px )
+@media ( max-width: 460px )
   .modal
     &__dialog
       overflow-y: auto
@@ -398,11 +403,11 @@
       width: 80%
     &__input
       margin-bottom: 10px
-      order: 1
-    // &__button
-    //   order: 2
+    &__button
+      order: 6
+      width: 100%
 
-  @media ( max-width: 440px )
+@media ( max-width: 440px )
   .reviews
     &-slider
       &__text
