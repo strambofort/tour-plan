@@ -1054,6 +1054,7 @@ iframe {
 
 .newslatter {
   padding: 98px 0 87px;
+  background-image: url(../img/newsletter-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -1114,7 +1115,6 @@ iframe {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   position: relative;
   width: 350px;
   min-height: 55px;
@@ -1502,6 +1502,11 @@ iframe {
 .footer__contact-details {
   grid-column: span 2;
   margin-top: 11px;
+}
+
+.footer__contact-details a {
+  text-decoration: none;
+  color: #BDBDBD;
 }
 
 .footer__contact-form {
@@ -2067,7 +2072,7 @@ form {
     padding-top: 56px;
   }
   .modal__dialog {
-    padding: 30px 50px 30px 50px;
+    padding: 32px 50px 32px 50px;
   }
 }
 
@@ -2315,7 +2320,14 @@ form {
             justify-content: space-between;
   }
   .modal__dialog {
+    width: 80%;
     padding: 33px 30px 33px 30px;
+  }
+  .modal__button {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .modal__info {
     margin-bottom: 10px;
@@ -2503,6 +2515,17 @@ form {
   }
 }
 
+@media (max-height: 500px) {
+  .modal__dialog {
+    overflow-y: auto;
+    max-height: 90%;
+    width: 80%;
+  }
+  .modal__input {
+    margin-bottom: 10px;
+  }
+}
+
 @media (max-width: 460px) {
   .modal__dialog {
     overflow-y: auto;
@@ -2552,6 +2575,19 @@ form {
   }
   .disclaimer__link:last-child {
     margin-right: 0;
+  }
+  .modal__dialog {
+    width: 85%;
+  }
+  .modal__title {
+    font-size: 16px;
+  }
+  .modal__input {
+    padding: 12px 0 12px 15px;
+  }
+  .modal__message {
+    padding: 12px 0 12px 15px;
+    margin-bottom: 15px;
   }
 }
 
