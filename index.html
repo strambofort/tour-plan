@@ -260,6 +260,7 @@
             class="newslatter__input"
             placeholder="Your email address"
             name="email"
+            required
           />
           <button class="button newslatter__button">Send</button>
         </form>
@@ -526,7 +527,7 @@
                 </div>
                 <div>
                   Tel (business hours) :
-                  <a href="tel:2691500" class="fotter__link">269 1500</a>
+                  <a href="tel:2691500" class="footer__link">269 1500</a>
                   <br />Tel (hotline) Monday - Saturday:
                   <a href="tel:52566138" class="footer__link"
                     >52&#8209;56-61-38</a
@@ -562,12 +563,15 @@
                 class="input footer__input"
                 placeholder="Your Full Name*"
                 name="name"
+                required
               />
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Phone Number*"
                 name="phone"
+                minlength="18"
+                required
               />
               <textarea
                 class="message footer__message"
@@ -607,18 +611,23 @@
             class="input modal__input"
             placeholder="Your Full Name*"
             name="name"
+            required
+            minlength="2"
           />
           <input
             type="text"
             class="input modal__input"
             placeholder="Phone Number*"
             name="phone"
+            required
+            minlength="18"
           />
           <input
             type="text"
             class="input modal__input"
             placeholder="Email*"
             name="email"
+            required
           />
           <textarea
             class="message modal__message"
@@ -633,6 +642,7 @@
     </div>
     <!-- /.modal -->
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
