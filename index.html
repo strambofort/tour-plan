@@ -253,7 +253,7 @@
         <form
           action="send-newslatter.php"
           method="POST"
-          class="subscribe newslatter__subscribe-form"
+          class="subscribe newslatter__subscribe-form form"
         >
           <input
             type="text"
@@ -525,15 +525,14 @@
                     alt="icon: phone"
                   />
                 </div>
-                <div>
-                  Tel (business hours) :
-                  <a href="tel:2691500" class="footer__link">269 1500</a>
+                <div class="footer__text-tel>
+                  Tel (business hours) : <a href="tel:2691500" class="footer__tel">269 1500</a>
                   <br />Tel (hotline) Monday - Saturday:
-                  <a href="tel:52566138" class="footer__link"
+                  <a href="tel:52566138" class="footer__tel"
                     >52&#8209;56-61-38</a
                   >
                   (08:00 am – 20:00&nbsp;pm)<br />Tel (hotline) Sunday:
-                  <a href="tel:52566138" class="footer__link"
+                  <a href="tel:52566138" class="footer__tel"
                     >52&#8209;56-61-38</a
                   >
                   (08:00 am – 14:00 pm)
@@ -557,7 +556,11 @@
             <h3 class="footer__title footer__title_contacts">
               Send us a message
             </h3>
-            <form action="send-footer.php" method="POST" class="footer__form">
+            <form
+              action="send-footer.php"
+              method="POST"
+              class="footer__form form"
+            >
               <input
                 type="text"
                 class="input footer__input"
