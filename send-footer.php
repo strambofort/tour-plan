@@ -24,24 +24,24 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    //$mail->SMTPDebug = 2;
+    $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'tour-plan@list.ru'; // Логин на почте
-    $mail->Password   = 'jePPAylc8mi1cAC6bZgX; // Пароль на почте
+    $mail->Username   = 'tour-plan01@mail.ru'; // Логин на почте
+    $mail->Password   = 'PY2iAeP4ocy:'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('tour-plan@list.ru', 'Alexey Markov'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('tour-plan01@mail.ru', 'Alexey Markov'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('eko.vlg@gmail.com');  
-
-// Отправка сообщения
-    $mail->isHTML(true);
-    $mail->Subject = $title;
-    $mail->Body = $body;    
+    
+    // Отправка сообщения
+$mail->isHTML(true);
+$mail->Subject = $title;
+$mail->Body = $body;    
 
 // Проверяем отравленность сообщения
 if ($mail->send()) {$result = "success";} 

@@ -225,6 +225,8 @@
   .booking
     width: 100%
     margin-bottom: 20px
+    &__button
+      max-width: 100%
   .map
     width: 100%
   .card
@@ -417,6 +419,7 @@
     &__button
       order: 6
       width: 100%
+      max-width: 100%
 
 @media ( max-width: 440px )
   .reviews
@@ -590,3 +593,48 @@
       order: 3
     &:nth-child(4)
       order: 4
+@media ( min-width: 992px )
+  .navbar
+    &-menu
+      &__link
+        position: relative
+        transition: 0.3s
+        &:before
+          content: ''
+          position: absolute
+          bottom: -3px
+          right: 0
+          width: 0
+          background-color: #fff
+          border-bottom: solid 1px #af0d2b
+          z-index: 100
+          transition: 0.3s
+        &:hover
+          opacity: 0.8
+          &:before
+            width: 100%
+            opacity: 1
+  .booking, .newslatter
+    &__button
+      transition: 0.3s
+      &:hover
+        background-color: #af0d2b
+        color: #f5fafe
+
+  .modal, .search, .subscribe, .footer, .newslatter
+    &__button
+      transition: 0.15s
+      &:hover
+        background-color: #af0d2b
+        color: #f5fafe
+
+  .card
+    &__button
+      transition: 0.3s
+      &:hover
+        background-color: #af0d2b
+  .footer
+    &__link
+      position: relative
+      &:hover
+        opacity: 0.7
