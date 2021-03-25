@@ -55,3 +55,82 @@ button
   align-items: center
   justify-content: space-between
   flex-wrap: wrap
+.invalid
+  color: $primary
+// Вариант с одной записью
+// label.invalid
+//   position: absolute
+//   // top: -20px
+//   left: 93px
+//   font-size: 14px
+//   background-color: $primary
+//   color: #fff
+//   padding: 5px 10px
+//   border-radius: 5px
+//   &::after
+//     content: ''
+//     position: absolute
+//     left: 15px
+//     bottom: -5px
+//     background-color: $primary
+//     width: 10px
+//     height: 10px
+//     transform: rotate(45deg)
+    // Вариант с тремя записями
+label.invalid
+  position: absolute
+  top: -20px
+  left: 15px
+  font-size: 14px
+  background-color: $primary
+  color: #fff
+  padding: 5px 10px
+  border-radius: 5px
+  &::after
+    content: ''
+    position: absolute
+    left: 15px
+    bottom: -5px
+    background-color: $primary
+    width: 10px
+    height: 10px
+    transform: rotate(45deg)
+
+label.invalid
+  &-modal
+    position: absolute
+    top: -25px
+    left: 15px
+    font-size: 14px
+    background-color: $primary
+    color: #fff
+    padding: 5px 10px
+    border-radius: 5px
+    &::after
+      content: ''
+      position: absolute
+      left: 6px
+      bottom: -5px
+      background-color: $primary
+      width: 10px
+      height: 10px
+      transform: rotate(45deg)
+label.invalid
+  &-footer
+    position: absolute
+    top: -25px
+    left: 13px
+    font-size: 14px
+    background-color: $primary
+    color: #fff
+    padding: 5px 10px
+    border-radius: 5px
+    &::after
+      content: ''
+      position: absolute
+      left: 6px
+      bottom: -5px
+      background-color: $primary
+      width: 10px
+      height: 10px
+      transform: rotate(45deg)
