@@ -26,7 +26,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'tour-plan@list.ru'; // Логин на почте
-    $mail->Password   = 'sRAbOYyt3e2('; // Пароль на почте
+    $mail->Password   = 'jePPAylc8mi1cAC6bZgX'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('tour-plan@list.ru', 'Alexey Markov'); // Адрес самой почты и имя отправителя
