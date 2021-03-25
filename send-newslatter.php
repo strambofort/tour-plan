@@ -25,11 +25,11 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'tour-plan@bk.ru'; // Логин на почте
-    $mail->Password   = 'iUpyETY%1tr4'; // Пароль на почте
+    $mail->Username   = 'tour-plan@list.ru'; // Логин на почте
+    $mail->Password   = 'sRAbOYyt3e2('; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('tour-plan@bk.ru', 'Alexey Markov'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('tour-plan@list.ru', 'Alexey Markov'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('eko.vlg@gmail.com');  

@@ -52,30 +52,8 @@ $(document).ready(function () {
   }
 });
 
-// Обработка форм
 $(".modal__input_tel").mask("+0 (000) 000-00-00");
 $(".footer__input_tel").mask("+0 (000) 000-00-00");
-// Вариант с одной записью
-// $(".form").each(function () {
-//   $(this).validate({
-//     errorClass: "invalid",
-//     messages: {
-//       name: {
-//         required: "Please specify your name",
-//         minlength: "At least 2 letters",
-//       },
-//       email: {
-//         required: "We need your email address",
-//         email: "Use form name@mail.ru",
-//       },
-//       phone: {
-//         required: "Telephone required ",
-//         minlength: "At least 11 letters",
-//       },
-//     },
-//   });
-// });
-// Вариант с тремя записями
 $(".modal__form").validate({
   errorClass: "invalid-modal",
   messages: {
@@ -107,9 +85,9 @@ $(".form").validate({
 $(".footer__form").validate({
   errorClass: "invalid-footer",
   messages: {
-    email: {
-      required: "Your email address",
-      email: "Format: name@domain.ru",
+    phone: {
+      required: "Telephone required",
+      minlength: "At least 11 letters",
     },
     name: {
       required: "Please specify your name",
