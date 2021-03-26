@@ -730,6 +730,7 @@ template {
 .navbar-menu__item {
   font-size: 14px;
   line-height: 18px;
+  font-weight: bold;
   list-style-type: none;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -985,10 +986,12 @@ template {
 .rating__counter {
   font-size: 14px;
   line-height: 18px;
+  font-weight: bold;
 }
 
 .rating__counter span {
   font-size: 10px;
+  font-weight: bold;
 }
 
 .booking {
@@ -2148,7 +2151,7 @@ form {
     height: 225px;
   }
   .footer {
-    padding-top: 67px;
+    padding-top: 62px;
   }
   .footer-wrapper {
     -ms-grid-columns: 200px 1fr 202px;
@@ -2272,6 +2275,7 @@ form {
   .user__name {
     margin-left: 0;
     margin-top: 10px;
+    font-weight: normal;
   }
   .user__name--light {
     color: #FFFFFF;
@@ -2298,6 +2302,9 @@ form {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .navbar-menu__link {
+    line-height: 15px;
   }
   .navbar-menu__item {
     margin-bottom: 20px;
